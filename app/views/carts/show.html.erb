@@ -4,6 +4,12 @@
     <h1>My Cart</h1>
   </header>
 
+  <% if cart_subtotal_cents == 0 %>
+    <p> Your cart is empty </p> 
+    <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-warning' %>
+
+  <% else %>
+
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -15,9 +21,11 @@
         </tr>
       </thead>
       <tbody>
+  
         <% enhanced_cart.each do |item| %>
           <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
         <% end %>
+     
       </tbody>
       <tfoot>
         <tr>
@@ -48,5 +56,6 @@
       <% end %>
     </div>
   </div>
+<% end %>
 
 </section>

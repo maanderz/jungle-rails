@@ -24,7 +24,7 @@
 
       <br/>
 
-      <% @product.reviews.each do |review| %>
+      <% @product.reviews.reverse.each do |review| %>
           
       <div class="col-sm-8">
         <dl class="dl-horizontal">
@@ -34,10 +34,15 @@
           <dd><%= review.rating %></dd>
           <dt>Description</dt>
           <dd><%= review.description %></dd>
+          <% if current_user.id == review.user_id %>
+          <dd><%= button_to "Delete", review, :method => :delete, class: 'btn btn-warning' %></dd>
+          <% end %>
         </dl>
       </div>
     <% end %>
     </div>
+    
+    <% if current_user != nil %>
 
     <div class="row">
     <div class="col-sm-6 col-sm-offset-1">
@@ -68,7 +73,7 @@
       <% end %>
     </div>
   </div>
-
+    <% end %>
 
   </article>
 

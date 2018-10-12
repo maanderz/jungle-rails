@@ -5,7 +5,6 @@
   </header>
 
   <article class="product-detail">
-
     <div class="row">
 
       <div class="col-sm-4">
@@ -22,8 +21,21 @@
           <dd><%= @product.quantity %></dd>
           <dt>Price</dt>
           <dd><%= @product.price %></dd>
+
+      <br/>
+      <% @product.reviews.each do |review| %>
+          
+      <div class="col-sm-8">
+        <dl class="dl-horizontal">
+          <dt>Username</dt>
+          <dd><%= review.user_id %></dd>
+          <dt>Rating</dt>
+          <dd><%= review.rating %></dd>
+          <dt>Description</dt>
+          <dd><%= review.description %></dd>
         </dl>
       </div>
+    <% end %>
     </div>
 
   </article>

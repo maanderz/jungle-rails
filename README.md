@@ -4,10 +4,11 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 ## Screenshots
 
-!["Screenshot of compose box"](https://github.com/maanderz/tweeter/blob/feature/mongodb/public/images/Screen%20Shot%202018-09-15%20at%201.26.18%20PM.png?raw=true)
+!["Screenshot of products"](https://github.com/maanderz/jungle-rails/blob/master/Screenshots/Screen%20Shot%202018-10-12%20at%204.29.31%20PM.png?raw=true)
 
-!["Screenshot of a tweet"](https://github.com/maanderz/tweeter/blob/feature/mongodb/public/images/Screen%20Shot%202018-09-15%20at%201.29.26%20PM.png?raw=true)
+!["Screenshot of ratings"](https://github.com/maanderz/jungle-rails/blob/master/Screenshots/Screen%20Shot%202018-10-12%20at%204.36.20%20PM.png?raw=true)
 
+!["Screenshot of cart"](https://github.com/maanderz/jungle-rails/blob/master/Screenshots/Screen%20Shot%202018-10-12%20at%204.47.37%20PM.png?raw=true)
 
 ## Setup
 

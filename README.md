@@ -2,6 +2,12 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Screenshots
+
+!["Screenshot of compose box"](https://github.com/maanderz/tweeter/blob/feature/mongodb/public/images/Screen%20Shot%202018-09-15%20at%201.26.18%20PM.png?raw=true)
+
+!["Screenshot of a tweet"](https://github.com/maanderz/tweeter/blob/feature/mongodb/public/images/Screen%20Shot%202018-09-15%20at%201.29.26%20PM.png?raw=true)
+
 
 ## Setup
 
